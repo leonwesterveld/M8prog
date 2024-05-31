@@ -1,4 +1,5 @@
 <?php get_header();?>
+<?php the_post(); ?>
 <main class="container my-5">
     <h1 class="mt-5">Dit is mijn eerste titel</h1>
     <div class="col-lg-8 px-0">
