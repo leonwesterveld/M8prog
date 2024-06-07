@@ -46,6 +46,21 @@
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+            <?php
+                wp_nav_menu(
+                    [
+                        'menu'            => 'header',
+                        'link_before'     => '',
+                        'link_after'      => '',
+                        'menu_class'      => 'navbar-nav me-auto mb-2 mb-lg-0',
+                        'container'       => 'div',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id'    => 'navbarSupportedContent',
+                        'add_li_class'    => 'nav-item',
+                        'add_a_class'     => 'nav-link',
+                    ]
+                );
+            ?>
         </div>
     </div>
 </nav>

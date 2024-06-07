@@ -24,6 +24,7 @@ if ( have_posts() ) :
             <h1 class="mt-5"><?php the_title() ?></h1>
             <div class="col-lg-8 px-0">
                 <?php the_excerpt() ?>
+                <a href="<?php the_permalink() ?>">bekijk item</a>
             </div>
         </main>
 	    <?php

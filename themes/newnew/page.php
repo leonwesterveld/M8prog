@@ -1,3 +1,4 @@
+<?php the_post(); ?>
 <?php get_header();?>
 <main class="container my-5">
     <h1 class="mt-5">Dit is mijn eerste titel</h1>
