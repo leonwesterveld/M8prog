@@ -63,3 +63,25 @@ function add_additional_class_on_a($attributes, $item, $args) {
 	return $attributes;
 }
 add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
+
+
+/**
+ * Initialize the widget area
+ * 
+ * @return void
+ */
+function add_theme_widgets() {
+	register_sidebar( 
+        [
+            'name'          => __( 'Footer Widget Area', 'm8prog' ),
+            'id'            => 'module8',
+            'description'   => __( 'A widget area located in the footer.', 'm8prog' ),
+            'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        ] 
+    );
+}
+
+add_action( 'widgets_init', 'add_theme_widgets' );
