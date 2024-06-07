@@ -1,6 +1,7 @@
 <?php get_header();?>
 <?php the_post(); ?>
 <main class="container my-5">
+<h2 class="titel">hallo</h2>
     <h1 class="mt-5">Dit is mijn eerste titel</h1>
     <div class="col-lg-8 px-0">
         <p class="fs-5">
@@ -23,7 +24,7 @@ if ( have_posts() ) :
         <main class="container my-5">
             <h1 class="mt-5"><?php the_title() ?></h1>
             <div class="col-lg-8 px-0">
-                <?php the_excerpt() ?>
+                <?php the_content() ?>
                 <a href="<?php the_permalink() ?>">bekijk item</a>
             </div>
         </main>
