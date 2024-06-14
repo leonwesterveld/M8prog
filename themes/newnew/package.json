@@ -9,7 +9,7 @@
     "dev": "webpack build --mode=development",
     "build": "webpack build --mode=production"
   },
-  "author": "My Name",
+  "author": "Leon Westerveld",
   "license": "ISC",
   "homepage": "https://localhost/m8prog",
   "dependencies": {

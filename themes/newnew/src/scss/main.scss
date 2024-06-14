@@ -1,20 +1,21 @@
 @import "custom";
-// @import "~bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
+
+body{
+  background: $club;
+}
 
 h1 {
   background: gray;
-  font-size: 10rem;
 }
 
 .admin-bar nav.navbar {
   top: 0;
 }
 
-.container{
-  background: $pink;
+.container {
 }
 
-.titel{
-  font-size: 100rem;
-  background: rosybrown;
+.titel {
+  background: $club;
 }
